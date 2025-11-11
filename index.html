@@ -113,11 +113,9 @@
 
 
 <script>
-  // Detect browser language
   const userLang = navigator.language || navigator.userLanguage;
   const lang = userLang.toLowerCase();
 
-  // Map of supported languages
   const langMap = {
     "ja": "index_ja.html",
     "de": "index_de.html",
@@ -127,28 +125,30 @@
     "ko": "index_ko.html",
     "pt": "index_pt.html",
     "ru": "index_ru.html",
-    "zh": "index_zh-rCN.html",
-    "zh-cn": "index_zh-rCN.html",
-    "zh-sg": "index_zh-rCN.html"
+    "zh": "index_zh.html"
+
   };
 
-  // Check if the user is not already on a localized page
-  const currentPage = window.location.pathname.toLowerCase();
-  const isRootIndex = currentPage.endsWith("index.html") || currentPage === "/" || currentPage === "";
+  // Detect current path (supports GitHub Pages subfolder)
+  const currentPath = window.location.pathname;
+  const basePath = currentPath.substring(0, currentPath.lastIndexOf('/') + 1); // ex: /NinjaCamAI/
+
+  const currentPage = currentPath.toLowerCase();
+  const isRootIndex = currentPage.endsWith("index.html") || currentPage.endsWith("/") || currentPage === "";
 
   if (isRootIndex) {
-    // Match language and redirect if needed
     for (const [key, file] of Object.entries(langMap)) {
       if (lang.startsWith(key)) {
-        // Avoid redirect loop (if already on the localized page)
+        const target = basePath + file;
         if (!currentPage.includes(file)) {
-          window.location.href = file;
+          window.location.href = target;
         }
         break;
       }
     }
   }
 </script>
+
 
 
 
