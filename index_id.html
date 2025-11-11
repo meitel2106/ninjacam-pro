@@ -3,74 +3,244 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NinjaCamAI - Aplikasi Kamera AI Sunyi dan Tercanggih</title>
-  <meta name="description" content="NinjaCamAI - Aplikasi Kamera AI Sunyi dan Tercanggih">
+  <title>NinjaCamAI - Aplikasi Kamera Sunyi & AI Offline Terkuat</title>
+  <meta name="description" content="NinjaCamAI adalah aplikasi kamera tersembunyi terbaik dengan pemotretan tanpa suara, deteksi wajah berbasis AI, estimasi emosi dan usia, pemotretan otomatis, deteksi getaran, serta dukungan penuh offline — semuanya gratis.">
+  <meta name="keywords" content="kamera senyap, kamera AI, pengenalan wajah, deteksi emosi, pemotretan otomatis, kamera keamanan, aplikasi Android, kamera offline">
   <meta name="author" content="GalaxyExpress">
+  <meta property="og:title" content="NinjaCamAI - Kamera AI Sunyi Terbaik" />
+  <meta property="og:description" content="Ambil gambar seperti bayangan — diam, cerdas, dan tak terlihat. AI mengenali wajah, emosi, dan usia tanpa diketahui siapa pun." />
+  <meta property="og:image" content="assets/NO1_id_google.png" />
+  <meta property="og:url" content="https://your-ninjacamai-site.netlify.app/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://your-ninjacamai-site.netlify.app/">
   <style>
-    body { background:#000; color:#fff; font-family:sans-serif; margin:0; }
-    header { text-align:center; padding:2rem 1rem; background:#111; font-size:2rem; }
-    .section { padding:2rem 1rem; max-width:900px; margin:auto; font-size:1.1rem; line-height:1.8; }
-    .section h2 { color:#00ffc6; font-size:1.8rem; text-align:center; margin-bottom:1rem; }
-    .section ul { padding-left:1.5rem; }
-    .section ul li::marker { content: "⚡ "; color:#00ffc6; }
-    .image-gallery { display:flex; overflow-x:auto; gap:1rem; padding:2rem 1rem; }
-    .image-gallery img { max-height:480px; border-radius:10px; }
-    .highlight-image { text-align:center; padding:3rem 1rem; }
-    .highlight-image img { width:100%; max-width:900px; border-radius:16px; box-shadow:0 0 15px #00ffc6; }
-    .link-buttons { text-align:center; padding:2rem 1rem; }
-    .link-buttons a { display:inline-block; margin:0.5rem; padding:1rem 2rem; background:#00ffc6; color:#000;
-                      font-weight:bold; border-radius:8px; text-decoration:none; box-shadow:0 0 8px #00ffc6; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #000;
+      color: #fff;
+    }
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+      background: #111;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    .section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    .section h2 {
+      color: #00ffc6;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .section ul li::marker {
+      content: "⚡ ";
+      color: #00ffc6;
+    }
+    .section ul {
+      padding-left: 1.5rem;
+    }
+    .section ul li {
+      margin-bottom: 0.8rem;
+    }
+    .section p {
+      margin-bottom: 1.2rem;
+    }
+    .image-gallery {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 1rem;
+      padding: 2rem 1rem;
+    }
+    .image-gallery img {
+      height: auto;
+      max-height: 480px;
+      width: auto;
+      max-width: 100%;
+      scroll-snap-align: center;
+      flex-shrink: 0;
+      border-radius: 10px;
+    }
+    .highlight-image {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .highlight-image img {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 16px;
+      box-shadow: 0 0 15px #00ffc6;
+    }
+    .link-buttons {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .link-buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 1rem 2rem;
+      background: #00ffc6;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 0 8px #00ffc6;
+    }
+    .link-buttons a:hover {
+      background: #00ddb0;
+    }
+    @media screen and (max-width: 600px) {
+      header {
+        font-size: 1.5rem;
+      }
+      .section {
+        font-size: 1rem;
+      }
+      .section h2 {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCJ0FJ0WYF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XCJ0FJ0WYF');
-</script>
-
 <body>
-  <header>NinjaCamAI - Kamera AI Siluman</header>
+  <header>
+    NinjaCamAI – Kamera Ninja dengan Kecerdasan Buatan
+  </header>
 
   <section class="section">
-    <h2>Tangkap tanpa ketahuan — NinjaCamAI, seni penyamaran sejati.</h2>
-    <p>Di tempat umum atau momen pribadi, ponselmu jadi saksi diam yang andal.</p>
+    <h2>Ambil gambar tanpa ketahuan —<br>“NinjaCamAI” dalam fotografi tersembunyi</h2>
+
+    <p>Baik di tempat umum maupun dalam momen pribadi,<br>
+    ponselmu menjadi bayangan yang diam-diam merekam segalanya.</p>
+
     <ul>
-      <li><strong>Pemotretan tanpa suara: Tanpa bunyi rana. Jepret layaknya bayangan.</strong></li>
-      <li><strong>Deteksi wajah AI: Otomatis memotret saat tersenyum. Waktu ninja yang tepat.</strong></li>
-      <li><strong>Prediksi usia, jenis kelamin, dan emosi: Lebih dari foto — AI memahami dirimu.</strong></li>
-      <li><strong>Timer & pemotretan otomatis: Seperti kamera tersembunyi yang siap bertugas.</strong></li>
-      <li><strong>Deteksi getaran: Hanya bereaksi saat ada gerakan. Persis ninja sejati.</strong></li>
-      <li><strong>Galeri bawaan: Pilih, hapus, atau bagikan. Bahkan bisa menggoyang bagian tertentu.</strong></li>
-      <li><strong>Fungsi kamera lengkap: Fokus, zoom, flash… semuanya tersedia.</strong></li>
-      <li><strong>100% offline: Data hanya di perangkat. Tidak bocor ke mana pun.</strong></li>
-      <li><strong>Gratis sepenuhnya: Tanpa batas. Langsung jadi ninja begitu dipasang.</strong></li>
-      <li><strong>⚠️ Peringatan: Jangan gunakan aplikasi ini untuk pengawasan ilegal.</strong></li>
+      <li><strong>Pemotretan tanpa suara:</strong> Tidak ada suara rana — era baru fotografi tersembunyi.</li>
+      <li><strong>Pengenalan wajah berbasis AI:</strong> Mengenali senyum dan ekspresi untuk memotret otomatis — waktu yang sempurna tanpa menyentuh layar.</li>
+      <li><strong>Estimasi usia, jenis kelamin, dan emosi:</strong> Bukan sekadar foto — AI memahami ekspresi dan suasana hatimu.</li>
+      <li><strong>Pemotretan otomatis dan timer:</strong> Atur kamera agar bekerja seperti kamera pengintai tersembunyi.</li>
+      <li><strong>Pemicu getaran:</strong> Hanya mengambil gambar saat ada gerakan — gaya ninja sejati.</li>
+      <li><strong>Galeri bawaan:</strong> Pilih, hapus, atau bagikan foto. Bahkan bisa “mengguncang” bagian tertentu untuk bersenang-senang.</li>
+      <li><strong>Kontrol kamera penuh:</strong> Fokus, zoom, flash — semua fitur lengkap tersedia.</li>
+      <li><strong>Sepenuhnya offline:</strong> Semua data tersimpan di perangkatmu. Tidak ada unggahan atau pelacakan.</li>
+      <li><strong>100% gratis:</strong> Tidak ada batasan — langsung gunakan semua fitur dari awal.</li>
+      <li><strong style="color:tomato;">Catatan:</strong> Aplikasi ini tidak boleh digunakan untuk tujuan ilegal atau pelanggaran privasi.</li>
     </ul>
-    <p>📹 Video pengenalan (aktifkan subtitle untuk pengalaman maksimal)<br>      1. <a href="https://youtube.com/shorts/LHtdWf3iZi8" target="_blank">https://youtube.com/shorts/LHtdWf3iZi8</a><br>
-      2. <a href="https://youtube.com/shorts/JKdhha0Bdic" target="_blank">https://youtube.com/shorts/JKdhha0Bdic</a><br>
+
+    <p>📹 Video demo (aktifkan subtitle)<br>
+      ① <a href="https://youtube.com/shorts/LHtdWf3iZi8" target="_blank">https://youtube.com/shorts/LHtdWf3iZi8</a><br>
+      ② <a href="https://youtube.com/shorts/JKdhha0Bdic" target="_blank">https://youtube.com/shorts/JKdhha0Bdic</a>
     </p>
   </section>
+
   <div class="image-gallery">
-    <img src="assets_id/NO1.png" alt="Silent proof with NinjaCamAI">
-    <img src="assets_id/NO2.png" alt="Ninja-style stealth capture">
-    <img src="assets_id/NO3.png" alt="Set it and leave it">
-    <img src="assets_id/NO4.jpg" alt="App settings screen">
-    <img src="assets_id/NO5.png" alt="AI detection screen">
+    <img src="assets_id/NO1.png" alt="Tanpa suara, bukti nyata">
+    <img src="assets_id/NO2.png" alt="Foto rahasia bergaya ninja">
+    <img src="assets_id/NO3.png" alt="Atur dan biarkan bekerja sendiri">
+    <img src="assets_id/NO4.jpg" alt="Layar pengaturan aplikasi">
+    <img src="assets_id/NO5.jpg" alt="Tampilan deteksi AI">
   </div>
 
   <div class="highlight-image">
-    <img src="assets_id/Future.png" alt="Fade into the shadows, capture everything">
+    <img src="assets_id/Future.png" alt="Lenyap dalam kegelapan. Tangkap segalanya.">
   </div>
 
+<section class="feature-compare">
+  <h2>Perbandingan fitur: Gratis vs Pro</h2>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>Fitur</th>
+        <th>NinjaCamAI<br><span>(Versi Gratis)</span></th>
+        <th>NinjaCamAI Pro<br><span>(Versi Berbayar)</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Pemotretan senyap (tanpa suara rana)</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Deteksi wajah & senyum berbasis AI</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Analisis usia, jenis kelamin & emosi (AI)</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Mode malam otomatis (berbasis AI)</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Timer / Otomatis / Pemotretan interval</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Pemicu getaran</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Ganti mode fokus</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Galeri (pilih banyak / hapus / bagikan)</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Efek guncangan gambar</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Unduh model AI terbaru</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Ambil foto dengan layar mati</td><td>🚫</td><td>✅</td></tr>
+      <tr><td>Ambil foto saat menggunakan aplikasi lain (operasi latar belakang penuh)</td><td>🚫</td><td>✅</td></tr>
+      <tr><td>Iklan</td><td>🚫Ya</td><td>✅Tidak</td></tr>
+      <tr><td>Harga</td><td>Gratis</td><td>Berbayar</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<style>
+body {
+  background: #000;
+  color: #ddd;
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.feature-compare {
+  background: #0a0a0a;
+  text-align: center;
+  padding: 60px 20px;
+}
+.feature-compare h2 {
+  color: #f5c842;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.compare-table {
+  width: 95%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: rgba(30, 30, 30, 0.9);
+  box-shadow: 0 0 20px rgba(245, 200, 66, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.compare-table th, .compare-table td {
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.compare-table th {
+  background: #1a1a1a;
+  color: #f5c842;
+  font-size: 1.1em;
+}
+.compare-table td {
+  color: #eee;
+  font-size: 0.95em;
+}
+.compare-table tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.03);
+}
+.compare-table tr:hover {
+  background: rgba(245, 200, 66, 0.05);
+}
+.compare-table td:first-child {
+  text-align: left;
+  color: #f5c842;
+  font-weight: 500;
+}
+</style>
+
   <div class="link-buttons">
-    <p>Unduh aplikasi:</p>
+    <p>Unduh Aplikasinya:</p>
     <a href="https://play.google.com/store/apps/details?id=com.galaxyexpress.ninja_camera" target="_blank">Google Play Store</a>
-    <a href="https://ninjacamai.jp.aptoide.com/app" target="_blank">Aptoide Appstore</a>
+    <a href="https://ninjacamai.id.aptoide.com/app" target="_blank">Aptoide App Store</a>
   </div>
 </body>
 </html>
