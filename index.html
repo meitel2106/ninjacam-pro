@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NinjaCamAI - The Ultimate Silent & AI-Powered Offline Camera App</title>
+  <meta name="description" content="NinjaCamAI is the ultimate stealth camera app with silent shooting, AI face recognition, emotion estimation, auto-shooting, vibration detection, and full offline functionality — all for free.">
+  <meta name="keywords" content="silent camera, AI camera, face recognition, emotion detection, stealth shooting, auto capture, security camera, Android app, offline camera">
+  <meta name="author" content="GalaxyExpress">
+  <meta property="og:title" content="NinjaCamAI - The Ultimate Silent & AI Camera App" />
+  <meta property="og:description" content="Capture like a shadow — quietly, intelligently, and without being noticed. AI detects faces, emotions, and ages to record everything unseen." />
+  <meta property="og:image" content="assets/NO1_en_google.png" />
+  <meta property="og:url" content="https://your-ninjacamai-site.netlify.app/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://your-ninjacamai-site.netlify.app/">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #000;
+      color: #fff;
+    }
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+      background: #111;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    .section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    .section h2 {
+      color: #00ffc6;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .section ul li::marker {
+      content: "⚡ ";
+      color: #00ffc6;
+    }
+    .section ul {
+      padding-left: 1.5rem;
+    }
+    .section ul li {
+      margin-bottom: 0.8rem;
+    }
+    .section p {
+      margin-bottom: 1.2rem;
+    }
+    .image-gallery {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 1rem;
+      padding: 2rem 1rem;
+    }
+    .image-gallery img {
+      height: auto;
+      max-height: 480px;
+      width: auto;
+      max-width: 100%;
+      scroll-snap-align: center;
+      flex-shrink: 0;
+      border-radius: 10px;
+    }
+    .highlight-image {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .highlight-image img {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 16px;
+      box-shadow: 0 0 15px #00ffc6;
+    }
+    .link-buttons {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .link-buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 1rem 2rem;
+      background: #00ffc6;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 0 8px #00ffc6;
+    }
+    .link-buttons a:hover {
+      background: #00ddb0;
+    }
+    @media screen and (max-width: 600px) {
+      header {
+        font-size: 1.5rem;
+      }
+      .section {
+        font-size: 1rem;
+      }
+      .section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+
+
+<script>
+  // Detect browser language
+  const userLang = navigator.language || navigator.userLanguage;
+  const lang = userLang.toLowerCase();
+
+  // Map of supported languages
+  const langMap = {
+    "ja": "index_ja.html",
+    "de": "index_de.html",
+    "es": "index_es.html",
+    "hi": "index_hi.html",
+    "id": "index_id.html",
+    "ko": "index_ko.html",
+    "pt": "index_pt.html",
+    "ru": "index_ru.html",
+    "zh": "index_zh-rCN.html",
+    "zh-cn": "index_zh-rCN.html",
+    "zh-sg": "index_zh-rCN.html"
+  };
+
+  // Check if the user is not already on a localized page
+  const currentPage = window.location.pathname.toLowerCase();
+  const isRootIndex = currentPage.endsWith("index.html") || currentPage === "/" || currentPage === "";
+
+  if (isRootIndex) {
+    // Match language and redirect if needed
+    for (const [key, file] of Object.entries(langMap)) {
+      if (lang.startsWith(key)) {
+        // Avoid redirect loop (if already on the localized page)
+        if (!currentPage.includes(file)) {
+          window.location.href = file;
+        }
+        break;
+      }
+    }
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <header>
+    NinjaCamAI - The Stealth AI Camera
+  </header>
+
+  <section class="section">
+    <h2>Capture without being noticed —<br>The “NinjaCamAI” of Stealth Photography</h2>
+
+    <p>In public or in private moments,<br>
+    your smartphone becomes a silent shadow, recording undeniable proof without a trace.</p>
+
+    <ul>
+      <li><strong>Completely Silent Shooting:</strong> Zero shutter sound — a new era of stealth photography.</li>
+      <li><strong>AI Face Recognition:</strong> Detects smiles and expressions for automatic capture — perfect timing without lifting a finger.</li>
+      <li><strong>Age, Gender & Emotion Estimation:</strong> Not just photos — AI reads your current expression and mood.</li>
+      <li><strong>Timer & Auto Shooting:</strong> Schedule missions like a hidden surveillance camera.</li>
+      <li><strong>Vibration Trigger:</strong> Capture moments only when movement is detected — the true ninja way.</li>
+      <li><strong>Built-in Gallery:</strong> Select, delete, or share photos. Even “shake” specific parts just for fun.</li>
+      <li><strong>Full Camera Controls:</strong> Focus, zoom, flash — everything you’d expect from a complete camera.</li>
+      <li><strong>Fully Offline:</strong> All data stays on your device. Nothing is ever uploaded or shared.</li>
+      <li><strong>100% Free:</strong> No restrictions from the start. Go full stealth from day one.</li>
+      <li><strong style="color:tomato;">Note:</strong> This app must not be used for voyeuristic or illegal purposes.</li>
+    </ul>
+
+    <p>📹 Demo Videos (Subtitles Recommended)<br>
+      ① <a href="https://youtube.com/shorts/LHtdWf3iZi8" target="_blank">https://youtube.com/shorts/LHtdWf3iZi8</a><br>
+      ② <a href="https://youtube.com/shorts/JKdhha0Bdic" target="_blank">https://youtube.com/shorts/JKdhha0Bdic</a>
+    </p>
+  </section>
+
+  <div class="image-gallery">
+    <img src="assets_en/NO1.png" alt="Zero sound, solid proof">
+    <img src="assets_en/NO2.png" alt="Shot in secret, ninja style">
+    <img src="assets_en/NO3.png" alt="Set it up, then let it go">
+    <img src="assets_en/NO4.jpg" alt="App settings screen">
+    <img src="assets_en/NO5.jpg" alt="AI recognition view">
+  </div>
+
+  <div class="highlight-image">
+    <img src="assets_en/Future.png" alt="Fade into darkness. Capture everything.">
+  </div>
+
+<section class="feature-compare">
+  <h2>Feature Comparison: Free vs Pro</h2>
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>Feature Category</th>
+        <th>NinjaCamAI<br><span>(Free Version)</span></th>
+        <th>NinjaCamAI Pro<br><span>(Paid Version)</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Silent Shooting (No Shutter Sound)</td><td>✅</td><td>✅</td></tr>
+      <tr><td>AI Face & Smile Detection</td><td>✅</td><td>✅</td></tr>
+      <tr><td>AI Age, Gender & Emotion Estimation</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Auto Night Mode (AI Judgement)</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Timer / Auto / Interval Shooting</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Vibration Trigger Capture</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Focus Mode Switching</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Gallery (Multi-select / Delete / Share)</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Shake Animation Effect</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Download Latest AI Models</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Shoot with Screen Off</td><td>🚫</td><td>✅</td></tr>
+      <tr><td>Capture While Using Other Apps (Full Background Operation)</td><td>🚫</td><td>✅</td></tr>
+      <tr><td>Ads Displayed</td><td>🚫Yes</td><td>✅No</td></tr>
+      <tr><td>Price</td><td>Free</td><td>Paid</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<style>
+body {
+  background: #000;
+  color: #ddd;
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- Comparison Table ---- */
+.feature-compare {
+  background: #0a0a0a;
+  text-align: center;
+  padding: 60px 20px;
+}
+.feature-compare h2 {
+  color: #f5c842;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.compare-table {
+  width: 95%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: rgba(30, 30, 30, 0.9);
+  box-shadow: 0 0 20px rgba(245, 200, 66, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.compare-table th, .compare-table td {
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.compare-table th {
+  background: #1a1a1a;
+  color: #f5c842;
+  font-size: 1.1em;
+}
+.compare-table td {
+  color: #eee;
+  font-size: 0.95em;
+}
+.compare-table tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.03);
+}
+.compare-table tr:hover {
+  background: rgba(245, 200, 66, 0.05);
+}
+.compare-table td:first-child {
+  text-align: left;
+  color: #f5c842;
+  font-weight: 500;
+}
+</style>
+
+  <div class="link-buttons">
+    <p>Download the App:</p>
+    <a href="https://play.google.com/store/apps/details?id=com.galaxyexpress.ninja_camera" target="_blank">Google Play Store</a>
+    <a href="https://ninjacamai.en.aptoide.com/app" target="_blank">Aptoide App Store</a>
+  </div>
+</body>
+</html>
