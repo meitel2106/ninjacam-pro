@@ -3,244 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NinjaCamAI - सबसे शक्तिशाली साइलेंट और एआई-संचालित ऑफ़लाइन कैमरा ऐप</title>
-  <meta name="description" content="NinjaCamAI एक शक्तिशाली कैमरा ऐप है जो बिना आवाज़ के फोटो खींचता है, AI चेहरा पहचानता है, भावनाएँ और उम्र का अनुमान लगाता है, कंपन से ट्रिगर होता है और ऑफ़लाइन भी पूरी तरह काम करता है — वह भी मुफ्त में।">
-  <meta name="keywords" content="साइलेंट कैमरा, एआई कैमरा, चेहरा पहचान, भावनाएँ पहचान, गुप्त फोटोग्राफी, ऑटो शूट, सुरक्षा कैमरा, एंड्रॉइड ऐप, ऑफ़लाइन कैमरा">
+  <title>NinjaCamAI - सबसे शक्तिशाली साइलेंट और AI कैमरा ऐप</title>
+  <meta name="description" content="NinjaCamAI - सबसे शक्तिशाली साइलेंट और AI कैमरा ऐप">
   <meta name="author" content="GalaxyExpress">
-  <meta property="og:title" content="NinjaCamAI - सबसे शक्तिशाली साइलेंट और एआई कैमरा ऐप" />
-  <meta property="og:description" content="छाया की तरह चुपचाप तस्वीर लो — बुद्धिमानी से, बिना दिखे। AI चेहरे, भावनाएँ और उम्र पहचान कर सब कुछ कैद करता है।" />
-  <meta property="og:image" content="assets/NO1_hi_google.png" />
-  <meta property="og:url" content="https://your-ninjacamai-site.netlify.app/" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="canonical" href="https://your-ninjacamai-site.netlify.app/">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #000;
-      color: #fff;
-    }
-    header {
-      padding: 2rem 1rem;
-      text-align: center;
-      background: #111;
-      font-size: 2rem;
-      letter-spacing: 2px;
-    }
-    .section {
-      padding: 2rem 1rem;
-      max-width: 900px;
-      margin: auto;
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
-    .section h2 {
-      color: #00ffc6;
-      font-size: 1.8rem;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    .section ul li::marker {
-      content: "⚡ ";
-      color: #00ffc6;
-    }
-    .section ul {
-      padding-left: 1.5rem;
-    }
-    .section ul li {
-      margin-bottom: 0.8rem;
-    }
-    .section p {
-      margin-bottom: 1.2rem;
-    }
-    .image-gallery {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      gap: 1rem;
-      padding: 2rem 1rem;
-    }
-    .image-gallery img {
-      height: auto;
-      max-height: 480px;
-      width: auto;
-      max-width: 100%;
-      scroll-snap-align: center;
-      flex-shrink: 0;
-      border-radius: 10px;
-    }
-    .highlight-image {
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    .highlight-image img {
-      width: 100%;
-      max-width: 900px;
-      border-radius: 16px;
-      box-shadow: 0 0 15px #00ffc6;
-    }
-    .link-buttons {
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    .link-buttons a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 1rem 2rem;
-      background: #00ffc6;
-      color: #000;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      box-shadow: 0 0 8px #00ffc6;
-    }
-    .link-buttons a:hover {
-      background: #00ddb0;
-    }
-    @media screen and (max-width: 600px) {
-      header {
-        font-size: 1.5rem;
-      }
-      .section {
-        font-size: 1rem;
-      }
-      .section h2 {
-        font-size: 1.5rem;
-      }
-    }
+    body { background:#000; color:#fff; font-family:sans-serif; margin:0; }
+    header { text-align:center; padding:2rem 1rem; background:#111; font-size:2rem; }
+    .section { padding:2rem 1rem; max-width:900px; margin:auto; font-size:1.1rem; line-height:1.8; }
+    .section h2 { color:#00ffc6; font-size:1.8rem; text-align:center; margin-bottom:1rem; }
+    .section ul { padding-left:1.5rem; }
+    .section ul li::marker { content: "⚡ "; color:#00ffc6; }
+    .image-gallery { display:flex; overflow-x:auto; gap:1rem; padding:2rem 1rem; }
+    .image-gallery img { max-height:480px; border-radius:10px; }
+    .highlight-image { text-align:center; padding:3rem 1rem; }
+    .highlight-image img { width:100%; max-width:900px; border-radius:16px; box-shadow:0 0 15px #00ffc6; }
+    .link-buttons { text-align:center; padding:2rem 1rem; }
+    .link-buttons a { display:inline-block; margin:0.5rem; padding:1rem 2rem; background:#00ffc6; color:#000;
+                      font-weight:bold; border-radius:8px; text-decoration:none; box-shadow:0 0 8px #00ffc6; }
   </style>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCJ0FJ0WYF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XCJ0FJ0WYF');
+</script>
+
 <body>
-  <header>
-    NinjaCamAI – निंजा जैसी एआई कैमरा
-  </header>
+  <header>NinjaCamAI - चुपचाप काम करने वाला AI कैमरा</header>
 
   <section class="section">
-    <h2>बिना किसी को पता चले फोटो खींचो —<br>यह है "NinjaCamAI" फोटोग्राफी का रहस्य</h2>
-
-    <p>चाहे सार्वजनिक जगह हो या कोई निजी पल,<br>
-    आपका स्मार्टफ़ोन एक ऐसी छाया बन जाता है जो सब कुछ चुपचाप रिकॉर्ड करता है।</p>
-
+    <h2>बिना पता चले तस्वीर लें — NinjaCamAI, एक निन्जा की कला।</h2>
+    <p>चाहे सार्वजनिक जगह हो या निजी पल, आपका फोन एक मूक गवाह बन जाता है।</p>
     <ul>
-      <li><strong>पूरी तरह साइलेंट शटर:</strong> कोई आवाज़ नहीं — यह है आधुनिक युग की गुप्त फोटोग्राफी।</li>
-      <li><strong>एआई चेहरा पहचान:</strong> मुस्कान और भाव पहचानकर अपने आप फोटो खींचता है — सही समय पर, बिना किसी प्रयास के।</li>
-      <li><strong>उम्र, लिंग और भावना अनुमान:</strong> केवल तस्वीर नहीं — एआई आपके मूड और चेहरे को भी पढ़ता है।</li>
-      <li><strong>टाइमर और ऑटो शूटिंग:</strong> निर्धारित समय पर खुद ब खुद काम करता है जैसे कोई छिपा हुआ कैमरा।</li>
-      <li><strong>कंपन से ट्रिगर:</strong> जब डिवाइस हिलता है तभी फोटो खींचता है — सच्चे निंजा का तरीका।</li>
-      <li><strong>इनबिल्ट गैलरी:</strong> फ़ोटो चुनें, हटाएं या साझा करें। और कुछ हिस्सों को “हिलाकर” मज़े भी लें।</li>
-      <li><strong>पूरी कैमरा कंट्रोल:</strong> फोकस, ज़ूम, फ्लैश — सब कुछ मौजूद।</li>
-      <li><strong>पूरी तरह ऑफ़लाइन:</strong> सभी डेटा आपके डिवाइस में रहता है। कोई अपलोड या ट्रैकिंग नहीं।</li>
-      <li><strong>100% मुफ़्त:</strong> कोई सीमा नहीं, कोई लॉक नहीं — शुरू से ही पूरा निंजा मोड।</li>
-      <li><strong style="color:tomato;">ध्यान दें:</strong> इस ऐप का इस्तेमाल किसी अवैध या निजीता-भंग उद्देश्य के लिए नहीं किया जाना चाहिए।</li>
+      <li><strong>पूरी तरह साइलेंट शूटिंग: कोई शटर की आवाज़ नहीं। छाया की तरह कैप्चर करें।</strong></li>
+      <li><strong>AI चेहरे की पहचान: मुस्कान पहचान कर ऑटोमैटिक क्लिक। एकदम निन्जा टाइमिंग।</strong></li>
+      <li><strong>उम्र, लिंग और भावनाओं की पहचान: सिर्फ तस्वीर नहीं — AI आपको समझता है।</strong></li>
+      <li><strong>टाइमर और ऑटो शॉट: सेट करें और छोड़ दें, जैसे एक स्थापित कैमरा।</strong></li>
+      <li><strong>वाइब्रेशन डिटेक्शन: सिर्फ हलचल पर प्रतिक्रिया करता है। जैसे असली निन्जा।</strong></li>
+      <li><strong>इनबिल्ट गैलरी: सेलेक्ट करें, हटाएं, या साझा करें। भागों को हिला भी सकते हैं।</strong></li>
+      <li><strong>फुल कैमरा फ़ीचर: फोकस, ज़ूम, फ्लैश... सब कुछ शामिल।</strong></li>
+      <li><strong>100% ऑफ़लाइन: सभी डेटा डिवाइस पर। कुछ भी लीक नहीं होगा।</strong></li>
+      <li><strong>पूरी तरह मुफ्त: बिना किसी सीमा के। इंस्टॉल करें और निन्जा बन जाएं।</strong></li>
+      <li><strong>⚠️ चेतावनी: इस ऐप का उपयोग अवैध निगरानी के लिए न करें।</strong></li>
     </ul>
-
-    <p>📹 डेमो वीडियो (सबटाइटल्स के साथ देखें)<br>
-      ① <a href="https://youtube.com/shorts/LHtdWf3iZi8" target="_blank">https://youtube.com/shorts/LHtdWf3iZi8</a><br>
-      ② <a href="https://youtube.com/shorts/JKdhha0Bdic" target="_blank">https://youtube.com/shorts/JKdhha0Bdic</a>
+    <p>📹 परिचय वीडियो (सबटाइटल ऑन करने की सिफारिश है)<br>      1. <a href="https://youtube.com/shorts/LHtdWf3iZi8" target="_blank">https://youtube.com/shorts/LHtdWf3iZi8</a><br>
+      2. <a href="https://youtube.com/shorts/JKdhha0Bdic" target="_blank">https://youtube.com/shorts/JKdhha0Bdic</a><br>
     </p>
   </section>
-
   <div class="image-gallery">
-    <img src="assets_hi/NO1.png" alt="बिना आवाज़, लेकिन सबूत पक्का">
-    <img src="assets_hi/NO2.png" alt="गुप्त रूप से ली गई तस्वीरें — निंजा स्टाइल">
-    <img src="assets_hi/NO3.png" alt="सेट करो और छोड़ दो">
-    <img src="assets_hi/NO4.jpg" alt="ऐप सेटिंग स्क्रीन">
-    <img src="assets_hi/NO5.jpg" alt="एआई पहचान दृश्य">
+    <img src="assets_hi/NO1.png" alt="Silent proof with NinjaCamAI">
+    <img src="assets_hi/NO2.png" alt="Ninja-style stealth capture">
+    <img src="assets_hi/NO3.png" alt="Set it and leave it">
+    <img src="assets_hi/NO4.jpg" alt="App settings screen">
+    <img src="assets_hi/NO5.png" alt="AI detection screen">
   </div>
 
   <div class="highlight-image">
-    <img src="assets_hi/Future.png" alt="अंधेरे में विलीन हो जाओ। सब कुछ कैद करो।">
+    <img src="assets_hi/Future.png" alt="Fade into the shadows, capture everything">
   </div>
-
-<section class="feature-compare">
-  <h2>फीचर तुलना: फ्री बनाम प्रो</h2>
-  <table class="compare-table">
-    <thead>
-      <tr>
-        <th>फ़ीचर</th>
-        <th>NinjaCamAI<br><span>(फ्री वर्ज़न)</span></th>
-        <th>NinjaCamAI Pro<br><span>(पेड वर्ज़न)</span></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>साइलेंट शूटिंग (कोई शटर साउंड नहीं)</td><td>✅</td><td>✅</td></tr>
-      <tr><td>एआई चेहरा और मुस्कान पहचान</td><td>✅</td><td>✅</td></tr>
-      <tr><td>एआई आधारित उम्र, लिंग और भावना विश्लेषण</td><td>✅</td><td>✅</td></tr>
-      <tr><td>ऑटो नाइट मोड (एआई निर्णय)</td><td>✅</td><td>✅</td></tr>
-      <tr><td>टाइमर / ऑटो / इंटरवल शूटिंग</td><td>✅</td><td>✅</td></tr>
-      <tr><td>कंपन से फोटो ट्रिगर</td><td>✅</td><td>✅</td></tr>
-      <tr><td>फोकस मोड बदलना</td><td>✅</td><td>✅</td></tr>
-      <tr><td>गैलरी (मल्टी-सिलेक्शन / डिलीट / शेयर)</td><td>✅</td><td>✅</td></tr>
-      <tr><td>इमेज शेक इफेक्ट</td><td>✅</td><td>✅</td></tr>
-      <tr><td>नवीनतम एआई मॉडल डाउनलोड</td><td>✅</td><td>✅</td></tr>
-      <tr><td>स्क्रीन बंद रहते हुए फोटो</td><td>🚫</td><td>✅</td></tr>
-      <tr><td>दूसरे ऐप्स का इस्तेमाल करते हुए फोटो (बैकग्राउंड मोड)</td><td>🚫</td><td>✅</td></tr>
-      <tr><td>विज्ञापन</td><td>🚫हाँ</td><td>✅नहीं</td></tr>
-      <tr><td>कीमत</td><td>मुफ़्त</td><td>भुगतान वाला</td></tr>
-    </tbody>
-  </table>
-</section>
-
-<style>
-body {
-  background: #000;
-  color: #ddd;
-  font-family: 'Noto Sans Devanagari', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-.feature-compare {
-  background: #0a0a0a;
-  text-align: center;
-  padding: 60px 20px;
-}
-.feature-compare h2 {
-  color: #f5c842;
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-.compare-table {
-  width: 95%;
-  max-width: 900px;
-  margin: 0 auto;
-  border-collapse: collapse;
-  background: rgba(30, 30, 30, 0.9);
-  box-shadow: 0 0 20px rgba(245, 200, 66, 0.2);
-  border-radius: 10px;
-  overflow: hidden;
-}
-.compare-table th, .compare-table td {
-  padding: 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-.compare-table th {
-  background: #1a1a1a;
-  color: #f5c842;
-  font-size: 1.1em;
-}
-.compare-table td {
-  color: #eee;
-  font-size: 0.95em;
-}
-.compare-table tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.03);
-}
-.compare-table tr:hover {
-  background: rgba(245, 200, 66, 0.05);
-}
-.compare-table td:first-child {
-  text-align: left;
-  color: #f5c842;
-  font-weight: 500;
-}
-</style>
 
   <div class="link-buttons">
     <p>ऐप डाउनलोड करें:</p>
     <a href="https://play.google.com/store/apps/details?id=com.galaxyexpress.ninja_camera" target="_blank">Google Play स्टोर</a>
-    <a href="https://ninjacamai.hi.aptoide.com/app" target="_blank">Aptoide ऐप स्टोर</a>
+    <a href="https://ninjacamai.jp.aptoide.com/app" target="_blank">Aptoide ऐपस्टोर</a>
   </div>
 </body>
 </html>

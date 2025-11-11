@@ -3,244 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NinjaCamAI - 가장 강력한 무음 AI 오프라인 카메라 앱</title>
-  <meta name="description" content="NinjaCamAI는 무음 촬영, AI 얼굴 인식, 감정 및 나이 추정, 자동 촬영, 진동 감지, 완전 오프라인 지원 등 모든 기능을 갖춘 최고의 스텔스 카메라 앱입니다.">
-  <meta name="keywords" content="무음 카메라, AI 카메라, 얼굴 인식, 감정 인식, 자동 촬영, 보안 카메라, 안드로이드 앱, 오프라인 카메라">
+  <title>NinjaCamAI - 무음 및 AI 인식 완벽 지원 스텔스 카메라 앱</title>
+  <meta name="description" content="NinjaCamAI - 무음 및 AI 인식 완벽 지원 스텔스 카메라 앱">
   <meta name="author" content="GalaxyExpress">
-  <meta property="og:title" content="NinjaCamAI - 무음·AI 지원 카메라 앱" />
-  <meta property="og:description" content="그림자처럼 조용히 촬영하세요 — 똑똑하게, 들키지 않게. AI가 얼굴, 감정, 나이를 인식해 모든 순간을 남깁니다." />
-  <meta property="og:image" content="assets/NO1_ko_google.png" />
-  <meta property="og:url" content="https://your-ninjacamai-site.netlify.app/" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="canonical" href="https://your-ninjacamai-site.netlify.app/">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #000;
-      color: #fff;
-    }
-    header {
-      padding: 2rem 1rem;
-      text-align: center;
-      background: #111;
-      font-size: 2rem;
-      letter-spacing: 2px;
-    }
-    .section {
-      padding: 2rem 1rem;
-      max-width: 900px;
-      margin: auto;
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
-    .section h2 {
-      color: #00ffc6;
-      font-size: 1.8rem;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    .section ul li::marker {
-      content: "⚡ ";
-      color: #00ffc6;
-    }
-    .section ul {
-      padding-left: 1.5rem;
-    }
-    .section ul li {
-      margin-bottom: 0.8rem;
-    }
-    .section p {
-      margin-bottom: 1.2rem;
-    }
-    .image-gallery {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      gap: 1rem;
-      padding: 2rem 1rem;
-    }
-    .image-gallery img {
-      height: auto;
-      max-height: 480px;
-      width: auto;
-      max-width: 100%;
-      scroll-snap-align: center;
-      flex-shrink: 0;
-      border-radius: 10px;
-    }
-    .highlight-image {
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    .highlight-image img {
-      width: 100%;
-      max-width: 900px;
-      border-radius: 16px;
-      box-shadow: 0 0 15px #00ffc6;
-    }
-    .link-buttons {
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    .link-buttons a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 1rem 2rem;
-      background: #00ffc6;
-      color: #000;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      box-shadow: 0 0 8px #00ffc6;
-    }
-    .link-buttons a:hover {
-      background: #00ddb0;
-    }
-    @media screen and (max-width: 600px) {
-      header {
-        font-size: 1.5rem;
-      }
-      .section {
-        font-size: 1rem;
-      }
-      .section h2 {
-        font-size: 1.5rem;
-      }
-    }
+    body { background:#000; color:#fff; font-family:sans-serif; margin:0; }
+    header { text-align:center; padding:2rem 1rem; background:#111; font-size:2rem; }
+    .section { padding:2rem 1rem; max-width:900px; margin:auto; font-size:1.1rem; line-height:1.8; }
+    .section h2 { color:#00ffc6; font-size:1.8rem; text-align:center; margin-bottom:1rem; }
+    .section ul { padding-left:1.5rem; }
+    .section ul li::marker { content: "⚡ "; color:#00ffc6; }
+    .image-gallery { display:flex; overflow-x:auto; gap:1rem; padding:2rem 1rem; }
+    .image-gallery img { max-height:480px; border-radius:10px; }
+    .highlight-image { text-align:center; padding:3rem 1rem; }
+    .highlight-image img { width:100%; max-width:900px; border-radius:16px; box-shadow:0 0 15px #00ffc6; }
+    .link-buttons { text-align:center; padding:2rem 1rem; }
+    .link-buttons a { display:inline-block; margin:0.5rem; padding:1rem 2rem; background:#00ffc6; color:#000;
+                      font-weight:bold; border-radius:8px; text-decoration:none; box-shadow:0 0 8px #00ffc6; }
   </style>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCJ0FJ0WYF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XCJ0FJ0WYF');
+</script>
+
 <body>
-  <header>
-    NinjaCamAI – 인공지능 닌자 카메라
-  </header>
+  <header>NinjaCamAI - 은밀한 AI 카메라</header>
 
   <section class="section">
-    <h2>들키지 않고 찍다 —<br>“NinjaCamAI”의 비밀 기술</h2>
-
-    <p>공공장소든 개인적인 순간이든,<br>
-    당신의 스마트폰은 조용히 모든 것을 기록하는 그림자가 됩니다.</p>
-
+    <h2>눈치채지 못하게 포착하다 — NinjaCamAI, 진정한 닌자의 기술.</h2>
+    <p>공공장소든 사적인 순간이든, 당신의 스마트폰은 조용한 증인이 됩니다.</p>
     <ul>
-      <li><strong>완전 무음 촬영:</strong> 셔터 소리 0 — 새로운 은밀 촬영의 시대.</li>
-      <li><strong>AI 얼굴 인식:</strong> 미소와 표정을 감지해 자동 촬영 — 손대지 않아도 완벽한 타이밍.</li>
-      <li><strong>나이·성별·감정 추정:</strong> 단순한 사진이 아니라, AI가 당신의 표정과 감정을 읽습니다.</li>
-      <li><strong>타이머·자동 촬영:</strong> 설정한 시간에 자동으로 촬영 — 감시 카메라처럼 작동.</li>
-      <li><strong>진동 감지 촬영:</strong> 움직임이 있을 때만 촬영 — 진정한 닌자의 방식.</li>
-      <li><strong>내장 갤러리:</strong> 사진 선택, 삭제, 공유 — 특정 부분을 “흔들어 놀기”도 가능.</li>
-      <li><strong>풀 카메라 기능:</strong> 포커스, 줌, 플래시 등 모든 기능 지원.</li>
-      <li><strong>완전 오프라인:</strong> 모든 데이터는 기기 내에만 저장 — 유출 걱정 없음.</li>
-      <li><strong>100% 무료:</strong> 제한 없이 즉시 사용 가능 — 완전한 스텔스 모드.</li>
-      <li><strong style="color:tomato;">주의:</strong> 본 앱은 불법 촬영이나 사생활 침해 목적의 사용을 금지합니다.</li>
+      <li><strong>완전 무음 촬영 기능: 셔터 소리 없이 조용히 촬영. 그림자처럼 촬영하세요.</strong></li>
+      <li><strong>AI 얼굴 인식 기능: 웃음을 감지해 자동 촬영. 닌자처럼 정확한 타이밍.</strong></li>
+      <li><strong>나이, 성별, 감정 예측: 단순한 사진이 아닌 AI가 당신을 읽습니다.</strong></li>
+      <li><strong>타이머 및 자동 촬영 기능: 설치형 카메라처럼 일정 시간에 작동.</strong></li>
+      <li><strong>진동 감지 기능: 움직임에만 반응. 진정한 닌자의 방식.</strong></li>
+      <li><strong>내장 갤러리: 사진 선택, 삭제, 공유. 특정 부위를 흔들어보는 재미까지.</strong></li>
+      <li><strong>일반 카메라 기능: 초점, 줌, 플래시 등 모든 기능 제공.</strong></li>
+      <li><strong>100% 오프라인 지원: 데이터는 기기 내에만 저장. 유출 걱정 없음.</strong></li>
+      <li><strong>완전 무료: 설치 후 바로 모든 기능 사용 가능. 제한 없음.</strong></li>
+      <li><strong>⚠️ 주의: 본 앱은 불법 촬영에 사용하지 마세요.</strong></li>
     </ul>
-
-    <p>📹 소개 영상 (자막 권장)<br>
-      ① <a href="https://youtube.com/shorts/LHtdWf3iZi8" target="_blank">https://youtube.com/shorts/LHtdWf3iZi8</a><br>
-      ② <a href="https://youtube.com/shorts/JKdhha0Bdic" target="_blank">https://youtube.com/shorts/JKdhha0Bdic</a>
+    <p>📹 소개 영상 (자막 ON 권장)<br>      1. <a href="https://youtube.com/shorts/LHtdWf3iZi8" target="_blank">https://youtube.com/shorts/LHtdWf3iZi8</a><br>
+      2. <a href="https://youtube.com/shorts/JKdhha0Bdic" target="_blank">https://youtube.com/shorts/JKdhha0Bdic</a><br>
     </p>
   </section>
-
   <div class="image-gallery">
-    <img src="assets_ko/NO1.png" alt="소리 없이, 증거는 확실히">
-    <img src="assets_ko/NO2.png" alt="은밀한 닌자 스타일 촬영">
-    <img src="assets_ko/NO3.png" alt="설정 후 자동 촬영">
-    <img src="assets_ko/NO4.jpg" alt="앱 설정 화면">
-    <img src="assets_ko/NO5.jpg" alt="AI 인식 화면">
+    <img src="assets_ko/NO1.png" alt="Silent proof with NinjaCamAI">
+    <img src="assets_ko/NO2.png" alt="Ninja-style stealth capture">
+    <img src="assets_ko/NO3.png" alt="Set it and leave it">
+    <img src="assets_ko/NO4.jpg" alt="App settings screen">
+    <img src="assets_ko/NO5.png" alt="AI detection screen">
   </div>
 
   <div class="highlight-image">
-    <img src="assets_ko/Future.png" alt="어둠 속으로 사라져라. 모든 것을 기록하라.">
+    <img src="assets_ko/Future.png" alt="Fade into the shadows, capture everything">
   </div>
-
-<section class="feature-compare">
-  <h2>기능 비교: 무료 vs 프로</h2>
-  <table class="compare-table">
-    <thead>
-      <tr>
-        <th>기능</th>
-        <th>NinjaCamAI<br><span>(무료 버전)</span></th>
-        <th>NinjaCamAI Pro<br><span>(유료 버전)</span></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>무음 촬영 (셔터 소리 없음)</td><td>✅</td><td>✅</td></tr>
-      <tr><td>AI 얼굴 및 미소 인식</td><td>✅</td><td>✅</td></tr>
-      <tr><td>AI 나이·성별·감정 분석</td><td>✅</td><td>✅</td></tr>
-      <tr><td>AI 자동 야간 모드 전환</td><td>✅</td><td>✅</td></tr>
-      <tr><td>타이머 / 자동 / 간격 촬영</td><td>✅</td><td>✅</td></tr>
-      <tr><td>진동 감지 촬영</td><td>✅</td><td>✅</td></tr>
-      <tr><td>포커스 모드 전환</td><td>✅</td><td>✅</td></tr>
-      <tr><td>갤러리 (다중 선택 / 삭제 / 공유)</td><td>✅</td><td>✅</td></tr>
-      <tr><td>이미지 흔들기 효과</td><td>✅</td><td>✅</td></tr>
-      <tr><td>최신 AI 모델 다운로드</td><td>✅</td><td>✅</td></tr>
-      <tr><td>화면 꺼진 상태에서 촬영</td><td>🚫</td><td>✅</td></tr>
-      <tr><td>다른 앱 사용 중 촬영 (완전 백그라운드 동작)</td><td>🚫</td><td>✅</td></tr>
-      <tr><td>광고 표시</td><td>🚫있음</td><td>✅없음</td></tr>
-      <tr><td>가격</td><td>무료</td><td>유료</td></tr>
-    </tbody>
-  </table>
-</section>
-
-<style>
-body {
-  background: #000;
-  color: #ddd;
-  font-family: 'Noto Sans KR', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-.feature-compare {
-  background: #0a0a0a;
-  text-align: center;
-  padding: 60px 20px;
-}
-.feature-compare h2 {
-  color: #f5c842;
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-.compare-table {
-  width: 95%;
-  max-width: 900px;
-  margin: 0 auto;
-  border-collapse: collapse;
-  background: rgba(30, 30, 30, 0.9);
-  box-shadow: 0 0 20px rgba(245, 200, 66, 0.2);
-  border-radius: 10px;
-  overflow: hidden;
-}
-.compare-table th, .compare-table td {
-  padding: 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-.compare-table th {
-  background: #1a1a1a;
-  color: #f5c842;
-  font-size: 1.1em;
-}
-.compare-table td {
-  color: #eee;
-  font-size: 0.95em;
-}
-.compare-table tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.03);
-}
-.compare-table tr:hover {
-  background: rgba(245, 200, 66, 0.05);
-}
-.compare-table td:first-child {
-  text-align: left;
-  color: #f5c842;
-  font-weight: 500;
-}
-</style>
 
   <div class="link-buttons">
     <p>앱 다운로드:</p>
     <a href="https://play.google.com/store/apps/details?id=com.galaxyexpress.ninja_camera" target="_blank">Google Play 스토어</a>
-    <a href="https://ninjacamai.ko.aptoide.com/app" target="_blank">Aptoide 앱 스토어</a>
+    <a href="https://ninjacamai.jp.aptoide.com/app" target="_blank">Aptoide 앱스토어</a>
   </div>
 </body>
 </html>
