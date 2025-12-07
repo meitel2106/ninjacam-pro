@@ -123,9 +123,25 @@
 </script>
 
 <body>
-  <header>
-    NinjaCamAI - 忍びのAIカメラ
-  </header>
+  <header style="background:#000; padding:45px 0 35px 0; border-bottom:1px solid #1a1a1a;">
+  <div style="display:flex; align-items:center; justify-content:center; gap:20px;">
+    <!-- アプリアイコン --> <img src="assets/logo.png" alt="NinjaCamAI Logo" style="height:90px; width:auto; filter:drop-shadow(0 0 8px rgba(0,255,198,0.5));">
+
+    <!-- タイトル -->
+    <h1 style="
+      font-family:'Rajdhani', sans-serif;
+      font-size:3.4rem;
+      color:#00c4a3;
+      letter-spacing:3px;
+      margin:0;
+      font-weight:700;
+      text-shadow:0 0 6px rgba(0,180,150,0.2), 0 0 15px rgba(0,120,100,0.3);
+      transition:all 0.3s ease;">
+      NinjaCamAI
+    </h1>
+  </div>
+
+</header>
 
   <section class="section">
     <h2>気づかれずに、確実に記録する──<br>NinjaCamAIという“忍びの術”</h2>
@@ -185,8 +201,8 @@
       <tr><td>ギャラリー機能（複数選択・削除・共有）</td><td>✅</td><td>✅</td></tr>
       <tr><td>画像部分揺らし機能</td><td>✅</td><td>✅ </td></tr>
       <tr><td>最新AIモデルダウンロード</td><td>✅</td><td>✅ </td></tr>
-　　　<tr><td>画面オフで撮影</td><td>🚫</td><td>✅ </td></tr>
-　　　<tr><td>他アプリ使用時に撮影(完全バックグラウンド動作)</td><td>🚫</td><td>✅ </td></tr>
+　　　<tr><td>画面オフ状態で撮影可</td><td>🚫</td><td>✅ </td></tr>
+　　　<tr><td>他アプリ使用時に撮影可(完全バックグラウンド動作)</td><td>🚫</td><td>✅ </td></tr>
 　　　<tr><td>広告表示</td><td>🚫あり</td><td>✅なし</td></tr>
       <tr><td>価格</td><td>無料</td><td>有料</td></tr>
 　　　
@@ -257,10 +273,49 @@ body {
 </style>
 
   <div class="link-buttons">
-    <p>アプリダウンロード：</p>
-    <a href="https://play.google.com/store/apps/details?id=com.galaxyexpress.ninja_camera" target="_blank">Google Playストア</a>
-    <a href="https://ninjacamai.jp.aptoide.com/app" target="_blank">Aptoideアプリストア</a>
+    <p style="font-size: 1.5rem; margin-bottom: 2rem; color: #00ffc6;">アプリダウンロード：</p>
+    
+    <!-- メインの2つのバージョン -->
+    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
+      <!-- 無料版 - Google Play -->
+      <div style="text-align: center; max-width: 320px; flex: 1; min-width: 280px;">
+        <div style="background: linear-gradient(135deg, #00ffc6 0%, #00b894 100%); padding: 2rem 1.5rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 255, 198, 0.4); height: 100%;">
+          <div style="font-size: 1.3rem; font-weight: bold; color: #000; margin-bottom: 0.5rem;">NinjaCamAI</div>
+          <div style="font-size: 1rem; color: #000; margin-bottom: 1.5rem; opacity: 0.8;">無料版</div>
+          <a href="https://play.google.com/store/apps/details?id=com.galaxyexpress.ninja_camera" target="_blank" style="display: block; background: #000; color: #00ffc6; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.05rem; transition: all 0.3s;">Google Playストア</a>
+        </div>
+      </div>
+
+      <!-- Pro 有料版 - Gumroad -->
+      <div style="text-align: center; max-width: 320px; flex: 1; min-width: 280px;">
+        <div style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); padding: 2rem 1.5rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(155, 89, 182, 0.4); border: 3px solid #f5c842; height: 100%;">
+          <div style="font-size: 1.3rem; font-weight: bold; color: #fff; margin-bottom: 0.5rem;">NinjaCamAI Pro</div>
+          <div style="font-size: 1rem; color: #fff; margin-bottom: 1.5rem; opacity: 0.9;">有料版</div>
+          <a href="https://meitel.gumroad.com/l/ninjacamai-pro" target="_blank" style="display: block; background: #f5c842; color: #000; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.05rem; transition: all 0.3s;">Gumroadで購入</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- お試し版（補足的な位置づけ） -->
+    <div style="text-align: center; margin-top: 1.5rem;">
+      <div style="display: inline-block; max-width: 480px; background: rgba(245, 200, 66, 0.1); border: 2px dashed #f5c842; border-radius: 10px; padding: 1.2rem 2rem;">
+        <div style="font-size: 0.95rem; color: #f5c842; margin-bottom: 0.8rem;">
+          💡 <strong>有料版を購入する前に試したい方へ</strong>
+        </div>
+        <a href="https://meitel.gumroad.com/l/ninjacamai-pro-trial" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #f5c842 0%, #e67e22 100%); color: #000; padding: 0.8rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold; transition: all 0.3s; box-shadow: 0 3px 10px rgba(245, 200, 66, 0.3);">NinjaCamAI Pro お試し版（無料）をダウンロード</a>
+      </div>
+    </div>
   </div>
+    </div>
+
+
+  </div>
+
+<footer style="text-align:center; padding:40px 0; color:#666; font-size:0.9rem; letter-spacing:1px; border-top:1px solid #222; margin-top:40px;">
+  <span style="color:#00ffc6; font-weight:bold;">NinjaCamAI</span> © 2025 — Designed & Developed by <strong>Meitel</strong><br>
+  <a href="mailto:galaxyexpress111@outlook.jp" style="color:#00ffc6; text-decoration:none;">galaxyexpress111@outlook.jp</a>
+</footer>
+
 </body>
 </html>
 
