@@ -3,320 +3,1226 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NinjaCamAI - 無音・AI認識・オフライン対応の最強カメラアプリ</title>
-  <meta name="description" content="NinjaCamAIは、無音撮影・AI顔認識・感情推定・自動撮影・振動検知など、すべての撮影機能を搭載した完全無料・オフライン対応の最強ステルスカメラアプリです。">
-  <meta name="keywords" content="無音カメラ, AIカメラ, 顔認識, 感情推定, ステルス撮影, 自動撮影, 防犯カメラ, Androidアプリ, オフラインカメラ">
+  
+  <!-- SEO最適化タイトル＆説明 -->
+  <title>NinjaCamAI - 無音カメラアプリ | AI顔認識・画面オフ撮影・完全無料【2025年最新】</title>
+  <meta name="description" content="【2025年最新】NinjaCamAIは完全無音で撮影できるAIカメラアプリ。顔認識・感情推定・画面オフ撮影・バックグラウンド撮影対応。3,700以上のダウンロード実績。Android対応・完全無料。">
+  
+  <!-- SEOキーワード -->
+  <meta name="keywords" content="無音カメラ,無音カメラアプリ,シャッター音なし,AIカメラ,顔認識カメラ,感情推定,ステルスカメラ,画面オフ撮影,バックグラウンド撮影,自動撮影,防犯カメラアプリ,Androidカメラアプリ,無料カメラアプリ,NinjaCamAI">
   <meta name="author" content="GalaxyExpress">
-  <meta property="og:title" content="NinjaCamAI - 無音・AI認識・完全オフラインの最強カメラアプリ" />
-  <meta property="og:description" content="忍びのように静かに撮影。AIで顔・感情・年齢まで認識し、誰にも気づかれずにすべてを残す。" />
-  <meta property="og:image" content="assets/NO1_jp_google.png" />
-  <meta property="og:url" content="https://your-ninjacamai-site.netlify.app/" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="canonical" href="https://your-ninjacamai-site.netlify.app/">
+  <meta name="robots" content="index, follow">
+  
+  <!-- OGP（SNSシェア最適化） -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NinjaCamAI">
+  <meta property="og:title" content="NinjaCamAI - 無音カメラアプリ | AI顔認識・画面オフ撮影【完全無料】">
+  <meta property="og:description" content="忍者のように静かに撮影。AIで顔・感情・年齢を認識。画面オフでも撮影可能。3,700+ダウンロードの人気アプリ。">
+  <meta property="og:image" content="https://ninjacamai.netlify.app/assets/og-image.png">
+  <meta property="og:url" content="https://ninjacamai.netlify.app/">
+  <meta property="og:locale" content="ja_JP">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NinjaCamAI - 無音カメラアプリ | AI顔認識・画面オフ撮影">
+  <meta name="twitter:description" content="忍者のように静かに撮影。AIで顔・感情・年齢を認識。完全無料のAndroidアプリ。">
+  <meta name="twitter:image" content="https://ninjacamai.netlify.app/assets/og-image.png">
+  
+  <!-- 正規URL -->
+  <link rel="canonical" href="https://ninjacamai.netlify.app/">
+  
+  <!-- 多言語対応 -->
+  <link rel="alternate" hreflang="ja" href="https://ninjacamai.netlify.app/index_ja.html">
+  <link rel="alternate" hreflang="en" href="https://ninjacamai.netlify.app/index.html">
+  
+  <!-- ファビコン -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  
+  <!-- Google Fonts - 和風＆サイバーパンク融合 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  
+  <!-- 構造化データ（JSON-LD） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "NinjaCamAI",
+    "operatingSystem": "Android",
+    "applicationCategory": "PhotographyApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "JPY"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "ratingCount": "100"
+    },
+    "description": "無音撮影・AI顔認識・感情推定・画面オフ撮影対応の最強ステルスカメラアプリ",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=com.galaxyexpress.ninja_camera",
+    "screenshot": "https://ninjacamai.netlify.app/assets_ja/NO1.jpg",
+    "author": {
+      "@type": "Organization",
+      "name": "GalaxyExpress"
+    }
+  }
+  </script>
+  
+  <!-- FAQ構造化データ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "NinjaCamAIは本当に無音で撮影できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、NinjaCamAIは完全無音で撮影できます。シャッター音が一切鳴らないため、静かな場所や会議中でも周囲に気づかれることなく撮影が可能です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "NinjaCamAIは無料で使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、NinjaCamAIの基本機能はすべて無料でご利用いただけます。AI顔認識、無音撮影、タイマー撮影などの主要機能が無料版に含まれています。より高度な機能（画面オフ撮影、バックグラウンド撮影、広告なし）をご希望の場合はPro版をご検討ください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "画面をオフにしたまま撮影できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pro版では画面をオフにした状態でも撮影が可能です。電源ボタンを押して画面を消した状態でも、バックグラウンドで撮影を継続できます。"
+        }
+      }
+    ]
+  }
+  </script>
+
   <style>
-    body {
+    /* ========================================
+       CSS変数 - サイバー忍者テーマ
+    ======================================== */
+    :root {
+      --ninja-green: #00ffc6;
+      --ninja-green-dark: #00b894;
+      --ninja-purple: #9b59b6;
+      --ninja-gold: #f5c842;
+      --ninja-red: #ff6b6b;
+      --bg-black: #000000;
+      --bg-dark: #0a0a0a;
+      --bg-card: rgba(20, 20, 20, 0.95);
+      --text-main: #ffffff;
+      --text-sub: #aaaaaa;
+      --font-jp: 'Zen Kaku Gothic New', sans-serif;
+      --font-cyber: 'Orbitron', sans-serif;
+    }
+
+    /* ========================================
+       リセット＆ベース
+    ======================================== */
+    *, *::before, *::after {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #000;
-      color: #fff;
+      padding: 0;
+      box-sizing: border-box;
     }
-    header {
-      padding: 2rem 1rem;
-      text-align: center;
-      background: #111;
-      font-size: 2rem;
-      letter-spacing: 2px;
+
+    html {
+      scroll-behavior: smooth;
     }
-    .section {
-      padding: 2rem 1rem;
-      max-width: 900px;
-      margin: auto;
-      font-size: 1.1rem;
+
+    body {
+      font-family: var(--font-jp);
+      background: var(--bg-black);
+      color: var(--text-main);
       line-height: 1.8;
+      overflow-x: hidden;
     }
-    .section h2 {
-      color: #00ffc6;
-      font-size: 1.8rem;
+
+    /* ========================================
+       背景エフェクト - マトリックス風
+    ======================================== */
+    .matrix-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+      background: 
+        radial-gradient(ellipse at 20% 20%, rgba(0, 255, 198, 0.03) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(155, 89, 182, 0.03) 0%, transparent 50%),
+        linear-gradient(180deg, #000 0%, #0a0a0a 100%);
+    }
+
+    .matrix-bg::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 255, 198, 0.02) 2px, rgba(0, 255, 198, 0.02) 4px);
+      animation: scan 8s linear infinite;
+    }
+
+    @keyframes scan {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(100px); }
+    }
+
+    /* ========================================
+       ヘッダー - 忍者の登場
+    ======================================== */
+    header {
+      position: relative;
+      padding: 80px 20px 60px;
       text-align: center;
-      margin-bottom: 1rem;
+      background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, transparent 100%);
+      border-bottom: 1px solid rgba(0, 255, 198, 0.2);
     }
-    .section ul li::marker {
-      content: "⚡ ";
-      color: #00ffc6;
-    }
-    .section ul {
-      padding-left: 1.5rem;
-    }
-    .section ul li {
-      margin-bottom: 0.8rem;
-    }
-    .section p {
-      margin-bottom: 1.2rem;
-    }
-    .image-gallery {
+
+    .logo-container {
       display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .logo-icon {
+      height: 100px;
+      width: auto;
+      filter: drop-shadow(0 0 20px rgba(0, 255, 198, 0.5));
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .logo-text {
+      font-family: var(--font-cyber);
+      font-size: clamp(2.5rem, 8vw, 4rem);
+      font-weight: 900;
+      color: var(--ninja-green);
+      letter-spacing: 4px;
+      text-shadow: 
+        0 0 10px rgba(0, 255, 198, 0.5),
+        0 0 30px rgba(0, 255, 198, 0.3),
+        0 0 50px rgba(0, 255, 198, 0.1);
+    }
+
+    .tagline {
+      font-size: clamp(1rem, 3vw, 1.3rem);
+      color: var(--text-sub);
+      letter-spacing: 2px;
+      animation: fadeIn 1s ease-out 0.5s both;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* バッジ */
+    .badges {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      animation: fadeIn 1s ease-out 0.8s both;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: rgba(0, 255, 198, 0.1);
+      border: 1px solid rgba(0, 255, 198, 0.3);
+      border-radius: 50px;
+      font-size: 0.9rem;
+      color: var(--ninja-green);
+    }
+
+    .badge-number {
+      font-family: var(--font-cyber);
+      font-weight: 700;
+    }
+
+    /* ========================================
+       ヒーローセクション
+    ======================================== */
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-title {
+      font-size: clamp(1.5rem, 5vw, 2.5rem);
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .hero-title .highlight {
+      color: var(--ninja-green);
+      position: relative;
+    }
+
+    .hero-title .highlight::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--ninja-green), transparent);
+    }
+
+    .hero-description {
+      font-size: 1.1rem;
+      color: var(--text-sub);
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    /* CTAボタン */
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .cta-btn:hover::before {
+      left: 100%;
+    }
+
+    .cta-btn-primary {
+      background: linear-gradient(135deg, var(--ninja-green) 0%, var(--ninja-green-dark) 100%);
+      color: #000;
+      box-shadow: 0 5px 25px rgba(0, 255, 198, 0.4);
+    }
+
+    .cta-btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 35px rgba(0, 255, 198, 0.5);
+    }
+
+    .cta-btn-secondary {
+      background: transparent;
+      color: var(--ninja-green);
+      border: 2px solid var(--ninja-green);
+    }
+
+    .cta-btn-secondary:hover {
+      background: rgba(0, 255, 198, 0.1);
+      transform: translateY(-3px);
+    }
+
+    /* ========================================
+       機能セクション
+    ======================================== */
+    .features {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      font-weight: 900;
+      margin-bottom: 60px;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--ninja-green), var(--ninja-purple));
+      margin: 20px auto 0;
+      border-radius: 2px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 30px;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--ninja-green), var(--ninja-purple));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      border-color: rgba(0, 255, 198, 0.3);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .feature-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    .feature-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--ninja-green);
+      margin-bottom: 10px;
+    }
+
+    .feature-desc {
+      color: var(--text-sub);
+      font-size: 0.95rem;
+    }
+
+    /* ========================================
+       スクリーンショットギャラリー
+    ======================================== */
+    .gallery {
+      padding: 80px 0;
+      background: linear-gradient(180deg, transparent 0%, rgba(0, 255, 198, 0.02) 50%, transparent 100%);
+    }
+
+    .gallery-scroll {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
-      gap: 1rem;
-      padding: 2rem 1rem;
+      scrollbar-width: none;
     }
-    .image-gallery img {
-      height: auto;
-      max-height: 480px;
-      width: auto;
-      max-width: 100%;
-      scroll-snap-align: center;
+
+    .gallery-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .gallery-item {
       flex-shrink: 0;
-      border-radius: 10px;
-    }
-    .highlight-image {
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    .highlight-image img {
-      width: 100%;
-      max-width: 900px;
+      scroll-snap-align: center;
       border-radius: 16px;
-      box-shadow: 0 0 15px #00ffc6;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
     }
-    .link-buttons {
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item img {
+      height: 500px;
+      width: auto;
+      display: block;
+    }
+
+    /* ========================================
+       比較表
+    ======================================== */
+    .comparison {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--bg-card);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .compare-table th {
+      background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+      padding: 20px 15px;
+      font-size: 1.1rem;
+      border-bottom: 2px solid var(--ninja-green);
+    }
+
+    .compare-table th:nth-child(2) {
+      color: var(--ninja-green);
+    }
+
+    .compare-table th:nth-child(3) {
+      color: var(--ninja-gold);
+    }
+
+    .compare-table td {
+      padding: 15px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
       text-align: center;
-      padding: 2rem 1rem;
     }
-    .link-buttons a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 1rem 2rem;
-      background: #00ffc6;
+
+    .compare-table td:first-child {
+      text-align: left;
+      font-weight: 500;
+      color: var(--text-sub);
+    }
+
+    .compare-table tr:hover {
+      background: rgba(0, 255, 198, 0.03);
+    }
+
+    .compare-table .check {
+      color: var(--ninja-green);
+      font-size: 1.3rem;
+    }
+
+    .compare-table .cross {
+      color: var(--ninja-red);
+      font-size: 1.1rem;
+    }
+
+    /* ========================================
+       ダウンロードセクション
+    ======================================== */
+    .download {
+      padding: 100px 20px;
+      text-align: center;
+      background: linear-gradient(180deg, transparent 0%, rgba(0, 255, 198, 0.05) 100%);
+    }
+
+    .download-cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+
+    .download-card {
+      background: var(--bg-card);
+      border-radius: 20px;
+      padding: 40px 30px;
+      width: 320px;
+      text-align: center;
+      border: 2px solid transparent;
+      transition: all 0.4s ease;
+      position: relative;
+    }
+
+    .download-card.free {
+      border-color: rgba(0, 255, 198, 0.3);
+    }
+
+    .download-card.pro {
+      border-color: rgba(245, 200, 66, 0.5);
+      background: linear-gradient(135deg, rgba(155, 89, 182, 0.1) 0%, rgba(245, 200, 66, 0.05) 100%);
+    }
+
+    .download-card.pro::before {
+      content: '⭐ おすすめ';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--ninja-gold);
       color: #000;
-      font-weight: bold;
-      border-radius: 8px;
+      padding: 5px 20px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .download-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .download-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .download-card.free h3 {
+      color: var(--ninja-green);
+    }
+
+    .download-card.pro h3 {
+      color: var(--ninja-gold);
+    }
+
+    .download-card .price {
+      font-family: var(--font-cyber);
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 20px 0;
+    }
+
+    .download-card.free .price {
+      color: var(--ninja-green);
+    }
+
+    .download-card.pro .price {
+      color: var(--ninja-gold);
+    }
+
+    .download-card ul {
+      list-style: none;
+      text-align: left;
+      margin: 20px 0;
+    }
+
+    .download-card ul li {
+      padding: 8px 0;
+      color: var(--text-sub);
+      font-size: 0.95rem;
+    }
+
+    .download-card ul li::before {
+      content: '✓ ';
+      color: var(--ninja-green);
+      font-weight: 700;
+    }
+
+    .download-btn {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      font-size: 1.1rem;
+      font-weight: 700;
       text-decoration: none;
-      box-shadow: 0 0 8px #00ffc6;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      margin-top: 20px;
     }
-    .link-buttons a:hover {
-      background: #00ddb0;
+
+    .download-card.free .download-btn {
+      background: var(--ninja-green);
+      color: #000;
     }
-    @media screen and (max-width: 600px) {
-      header {
-        font-size: 1.5rem;
+
+    .download-card.pro .download-btn {
+      background: linear-gradient(135deg, var(--ninja-gold) 0%, #e67e22 100%);
+      color: #000;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    /* 試用版リンク */
+    .trial-link {
+      margin-top: 50px;
+      padding: 20px;
+      background: rgba(245, 200, 66, 0.1);
+      border: 2px dashed rgba(245, 200, 66, 0.5);
+      border-radius: 12px;
+      display: inline-block;
+    }
+
+    .trial-link a {
+      color: var(--ninja-gold);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .trial-link a:hover {
+      text-decoration: underline;
+    }
+
+    /* ========================================
+       FAQ
+    ======================================== */
+    .faq {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border-radius: 12px;
+      margin-bottom: 15px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .faq-question {
+      padding: 20px 25px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.3s ease;
+    }
+
+    .faq-question:hover {
+      background: rgba(0, 255, 198, 0.05);
+    }
+
+    .faq-question::after {
+      content: '+';
+      font-size: 1.5rem;
+      color: var(--ninja-green);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-question::after {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+      padding: 0 25px 20px;
+    }
+
+    .faq-answer p {
+      color: var(--text-sub);
+      line-height: 1.8;
+    }
+
+    /* ========================================
+       動画セクション
+    ======================================== */
+    .videos {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .video-grid {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .video-card {
+      background: var(--bg-card);
+      border-radius: 16px;
+      padding: 20px;
+      width: 350px;
+      transition: transform 0.3s ease;
+    }
+
+    .video-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .video-card a {
+      color: var(--ninja-green);
+      text-decoration: none;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .video-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* ========================================
+       フッター
+    ======================================== */
+    footer {
+      padding: 60px 20px;
+      text-align: center;
+      background: var(--bg-dark);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-logo {
+      font-family: var(--font-cyber);
+      font-size: 1.5rem;
+      color: var(--ninja-green);
+      margin-bottom: 15px;
+    }
+
+    .footer-copy {
+      color: var(--text-sub);
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .footer-email a {
+      color: var(--ninja-green);
+      text-decoration: none;
+    }
+
+    .footer-email a:hover {
+      text-decoration: underline;
+    }
+
+    /* ========================================
+       注意書き
+    ======================================== */
+    .warning {
+      background: rgba(255, 107, 107, 0.1);
+      border: 1px solid rgba(255, 107, 107, 0.3);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 40px auto;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .warning p {
+      color: var(--ninja-red);
+      font-weight: 700;
+    }
+
+    /* ========================================
+       レスポンシブ
+    ======================================== */
+    @media screen and (max-width: 768px) {
+      .logo-container {
+        flex-direction: column;
+        gap: 15px;
       }
-      .section {
-        font-size: 1rem;
+
+      .logo-icon {
+        height: 80px;
       }
-      .section h2 {
-        font-size: 1.5rem;
+
+      .badges {
+        gap: 10px;
+      }
+
+      .badge {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+      }
+
+      .gallery-item img {
+        height: 400px;
+      }
+
+      .compare-table {
+        font-size: 0.85rem;
+      }
+
+      .compare-table th,
+      .compare-table td {
+        padding: 10px 8px;
+      }
+
+      .download-card {
+        width: 100%;
+        max-width: 350px;
       }
     }
   </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XCJ0FJ0WYF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XCJ0FJ0WYF');
+  </script>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCJ0FJ0WYF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XCJ0FJ0WYF');
-</script>
-
 <body>
-  <header style="background:#000; padding:45px 0 35px 0; border-bottom:1px solid #1a1a1a;">
-  <div style="display:flex; align-items:center; justify-content:center; gap:20px;">
-    <!-- アプリアイコン --> <img src="assets/logo.png" alt="NinjaCamAI Logo" style="height:90px; width:auto; filter:drop-shadow(0 0 8px rgba(0,255,198,0.5));">
+  <!-- 背景エフェクト -->
+  <div class="matrix-bg"></div>
 
-    <!-- タイトル -->
-    <h1 style="
-      font-family:'Rajdhani', sans-serif;
-      font-size:3.4rem;
-      color:#00c4a3;
-      letter-spacing:3px;
-      margin:0;
-      font-weight:700;
-      text-shadow:0 0 6px rgba(0,180,150,0.2), 0 0 15px rgba(0,120,100,0.3);
-      transition:all 0.3s ease;">
-      NinjaCamAI
-    </h1>
-  </div>
+  <!-- ヘッダー -->
+  <header>
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="NinjaCamAI ロゴ - 無音カメラアプリ" class="logo-icon">
+      <h1 class="logo-text">NinjaCamAI</h1>
+    </div>
+    <p class="tagline">忍びのように静かに、確実に記録する</p>
+    
+    <div class="badges">
+      <span class="badge">
+        <span>📥</span>
+        <span class="badge-number">3,700+</span>
+        <span>ダウンロード</span>
+      </span>
+      <span class="badge">
+        <span>⭐</span>
+        <span>完全無料</span>
+      </span>
+      <span class="badge">
+        <span>🔒</span>
+        <span>オフライン対応</span>
+      </span>
+    </div>
+  </header>
 
-</header>
-
-  <section class="section">
-    <h2>気づかれずに、確実に記録する──<br>NinjaCamAIという“忍びの術”</h2>
-
-    <p>公共の場でも、密やかな瞬間でも。<br>
-    あなたのスマホが、まるで影のように“証拠”を残す存在に。</p>
-
-    <ul>
-      <li><strong>完全無音撮影機能：</strong> シャッター音ゼロ。息をひそめて撮る新時代のツール。</li>
-      <li><strong>AI顔認識機能：</strong> 表情や笑顔を捉えて自動シャッター。忍ばずしてタイミングを掴む。</li>
-      <li><strong>年齢・性別・感情の推定：</strong> ただ写すだけじゃない。“今のあなた”をAIが読み解く。</li>
-      <li><strong>タイマー＆自動撮影機能：</strong> 指定時間に、まるで設置型カメラのように任務をこなす。</li>
-      <li><strong>振動検知機能：</strong> 手がふれた瞬間だけがトリガーになる、まさに忍び道。</li>
-      <li><strong>内蔵ギャラリー：</strong> 撮影後の画像を選択・削除・共有。特定部分を“揺らして遊ぶ”秘密も。</li>
-      <li><strong>通常カメラ機能：</strong> フォーカス・ズーム・フラッシュ…もちろん全部使えるフル機能。</li>
-      <li><strong>完全オフライン：</strong> データは端末に完結。撮影情報は誰にもバレない。</li>
-      <li><strong>すべて無料：</strong> インストール直後から制限ナシ。全力で忍べる。</li>
-      <li><strong style="color:tomato;">※ご注意：</strong> 本アプリは盗撮目的での使用を禁じます。</li>
-    </ul>
-
-    <p>📹 紹介動画（字幕ON推奨）<br>
-      ① <a href="https://youtube.com/shorts/LHtdWf3iZi8" target="_blank">https://www.youtube.com/watch?v=LHtdWf3iZi8</a><br>
-      ② <a href="https://youtube.com/shorts/JKdhha0Bdic" target="_blank">https://www.youtube.com/watch?v=JKdhha0Bdic</a>
+  <!-- ヒーローセクション -->
+  <section class="hero">
+    <h2 class="hero-title">
+      <span class="highlight">シャッター音ゼロ</span>で撮影<br>
+      AIが顔・感情・年齢を自動認識
+    </h2>
+    <p class="hero-description">
+      NinjaCamAIは、完全無音撮影・AI顔認識・感情推定・画面オフ撮影など、<br>
+      すべての機能を搭載した最強のステルスカメラアプリです。
     </p>
+    
+    <div class="cta-buttons">
+      <a href="https://play.google.com/store/apps/details?id=com.galaxyexpress.ninja_camera" class="cta-btn cta-btn-primary" target="_blank" rel="noopener">
+        <span>▶</span> 無料でダウンロード
+      </a>
+      <a href="#features" class="cta-btn cta-btn-secondary">
+        <span>↓</span> 機能を見る
+      </a>
+    </div>
   </section>
 
-  <div class="image-gallery">
-    <img src="assets_ja/NO1.jpg" alt="音ゼロ、証拠アリ">
-    <img src="assets_ja/NO2.jpg" alt="密かに忍びが撮る">
-    <img src="assets_ja/NO3.jpg" alt="セットして、あとは放置">
-    <img src="assets_ja/NO4.jpg" alt="アプリ設定画面">
-    <img src="assets_ja/NO5.jpg" alt="AI認識画面">
-  </div>
-
-  <div class="highlight-image">
-    <img src="assets_ja/Future.jpg" alt="闇に紛れてすべてを残す">
-  </div>
-
-<section class="feature-compare">
-  <h2>無料版と有料版の機能比較表</h2>
-  <table class="compare-table">
-    <thead>
-      <tr>
-        <th>機能カテゴリ</th>
-        <th>NinjaCamAI<br><span>(無料版)</span></th>
-        <th>NinjaCamAI Pro<br><span>(有料版)</span></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>無音撮影（シャッター音ゼロ）</td><td>✅</td><td>✅</td></tr>
-      <tr><td>AI顔認識・笑顔検出</td><td>✅</td><td>✅ </td></tr>
-      <tr><td>年齢・性別・感情推定（AI分析）</td><td>✅ </td><td>✅ </td></tr>
-      <tr><td>ナイトモード自動切替（AI判断）</td><td>✅</td><td>✅</td></tr>
-      <tr><td>タイマー撮影／自動撮影／インターバル撮影</td><td>✅ </td><td>✅ </td></tr>
-      <tr><td>振動検知シャッター</td><td>✅</td><td>✅ </td></tr>
-      <tr><td>フォーカスモード切替</td><td>✅</td><td>✅</td></tr>
-      <tr><td>ギャラリー機能（複数選択・削除・共有）</td><td>✅</td><td>✅</td></tr>
-      <tr><td>画像部分揺らし機能</td><td>✅</td><td>✅ </td></tr>
-      <tr><td>最新AIモデルダウンロード</td><td>✅</td><td>✅ </td></tr>
-　　　<tr><td>画面オフ状態で撮影可</td><td>🚫</td><td>✅ </td></tr>
-　　　<tr><td>他アプリ使用時に撮影可(完全バックグラウンド動作)</td><td>🚫</td><td>✅ </td></tr>
-　　　<tr><td>広告表示</td><td>🚫あり</td><td>✅なし</td></tr>
-      <tr><td>価格</td><td>無料</td><td>有料</td></tr>
-　　　
-    </tbody>
-  </table>
-</section>
-
-<style>
-body {
-  background: #000;
-  color: #ddd;
-  font-family: 'Noto Sans JP', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-
-/* ---- 比較表 ---- */
-.feature-compare {
-  background: #0a0a0a;
-  text-align: center;
-  padding: 60px 20px;
-}
-.feature-compare h2 {
-  color: #f5c842;
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-.feature-compare .subtitle {
-  color: #aaa;
-  font-size: 1em;
-  margin-bottom: 40px;
-}
-.compare-table {
-  width: 95%;
-  max-width: 900px;
-  margin: 0 auto;
-  border-collapse: collapse;
-  background: rgba(30, 30, 30, 0.9);
-  box-shadow: 0 0 20px rgba(245, 200, 66, 0.2);
-  border-radius: 10px;
-  overflow: hidden;
-}
-.compare-table th, .compare-table td {
-  padding: 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-.compare-table th {
-  background: #1a1a1a;
-  color: #f5c842;
-  font-size: 1.1em;
-}
-.compare-table td {
-  color: #eee;
-  font-size: 0.95em;
-}
-.compare-table tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.03);
-}
-.compare-table tr:hover {
-  background: rgba(245, 200, 66, 0.05);
-}
-.compare-table td:first-child {
-  text-align: left;
-  color: #f5c842;
-  font-weight: 500;
-}
-</style>
-
-  <div class="link-buttons">
-    <p style="font-size: 1.5rem; margin-bottom: 2rem; color: #00ffc6;">アプリダウンロード：</p>
+  <!-- 機能セクション -->
+  <section class="features" id="features">
+    <h2 class="section-title">主な機能</h2>
     
-    <!-- メインの2つのバージョン -->
-    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
-      <!-- 無料版 - Google Play -->
-      <div style="text-align: center; max-width: 320px; flex: 1; min-width: 280px;">
-        <div style="background: linear-gradient(135deg, #00ffc6 0%, #00b894 100%); padding: 2rem 1.5rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0, 255, 198, 0.4); height: 100%;">
-          <div style="font-size: 1.3rem; font-weight: bold; color: #000; margin-bottom: 0.5rem;">NinjaCamAI</div>
-          <div style="font-size: 1rem; color: #000; margin-bottom: 1.5rem; opacity: 0.8;">無料版</div>
-          <a href="https://play.google.com/store/apps/details?id=com.galaxyexpress.ninja_camera" target="_blank" style="display: block; background: #000; color: #00ffc6; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.05rem; transition: all 0.3s;">Google Playストア</a>
-        </div>
-      </div>
+    <div class="features-grid">
+      <article class="feature-card">
+        <span class="feature-icon">🔇</span>
+        <h3 class="feature-title">完全無音撮影</h3>
+        <p class="feature-desc">シャッター音が一切鳴らない。会議中、電車内、静かな場所でも周囲に気づかれることなく撮影可能。</p>
+      </article>
 
-      <!-- Pro 有料版 - Gumroad -->
-      <div style="text-align: center; max-width: 320px; flex: 1; min-width: 280px;">
-        <div style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); padding: 2rem 1.5rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(155, 89, 182, 0.4); border: 3px solid #f5c842; height: 100%;">
-          <div style="font-size: 1.3rem; font-weight: bold; color: #fff; margin-bottom: 0.5rem;">NinjaCamAI Pro</div>
-          <div style="font-size: 1rem; color: #fff; margin-bottom: 1.5rem; opacity: 0.9;">有料版</div>
-          <a href="https://meitel.gumroad.com/l/ninjacamai-pro" target="_blank" style="display: block; background: #f5c842; color: #000; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.05rem; transition: all 0.3s;">Gumroadで購入</a>
-        </div>
-      </div>
-    </div>
+      <article class="feature-card">
+        <span class="feature-icon">🤖</span>
+        <h3 class="feature-title">AI顔認識</h3>
+        <p class="feature-desc">高精度なAIが顔を自動検出。笑顔を検知して自動シャッターを切る機能も搭載。</p>
+      </article>
 
-    <!-- お試し版（補足的な位置づけ） -->
-    <div style="text-align: center; margin-top: 4.5rem;">
-      <div style="display: inline-block; max-width: 480px; background: rgba(245, 200, 66, 0.1); border: 2px dashed #f5c842; border-radius: 10px; padding: 1.2rem 2rem;">
-        <div style="font-size: 0.95rem; color: #f5c842; margin-bottom: 0.8rem;">
-          💡 <strong>有料版を購入する前に試したい方へ</strong>
-        </div>
-        <a href="https://meitel.gumroad.com/l/ninjacamai-pro-trial" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #f5c842 0%, #e67e22 100%); color: #000; padding: 0.8rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold; transition: all 0.3s; box-shadow: 0 3px 10px rgba(245, 200, 66, 0.3);">NinjaCamAI Pro お試し版（無料）をダウンロード</a>
-      </div>
+      <article class="feature-card">
+        <span class="feature-icon">😊</span>
+        <h3 class="feature-title">感情・年齢推定</h3>
+        <p class="feature-desc">AIが表情から感情を分析。年齢・性別も推定し、写真に情報を記録できる。</p>
+      </article>
+
+      <article class="feature-card">
+        <span class="feature-icon">📴</span>
+        <h3 class="feature-title">画面オフ撮影 <span style="color:var(--ninja-gold);font-size:0.8rem;">[Pro]</span></h3>
+        <p class="feature-desc">画面を消した状態でもバックグラウンドで撮影を継続。究極のステルス撮影を実現。</p>
+      </article>
+
+      <article class="feature-card">
+        <span class="feature-icon">⏱️</span>
+        <h3 class="feature-title">タイマー＆自動撮影</h3>
+        <p class="feature-desc">指定時間に自動撮影。インターバル撮影にも対応し、定点観測にも最適。</p>
+      </article>
+
+      <article class="feature-card">
+        <span class="feature-icon">📳</span>
+        <h3 class="feature-title">振動検知シャッター</h3>
+        <p class="feature-desc">端末に触れた瞬間に自動でシャッターが切れる。まさに忍びの技。</p>
+      </article>
+
+      <article class="feature-card">
+        <span class="feature-icon">🌙</span>
+        <h3 class="feature-title">ナイトモード自動切替</h3>
+        <p class="feature-desc">AIが暗所を自動判定し、最適なナイトモードに切り替え。暗い場所でも鮮明に撮影。</p>
+      </article>
+
+      <article class="feature-card">
+        <span class="feature-icon">🔒</span>
+        <h3 class="feature-title">完全オフライン</h3>
+        <p class="feature-desc">すべての処理が端末内で完結。撮影データは外部に送信されず、プライバシーを完全保護。</p>
+      </article>
     </div>
+  </section>
+
+  <!-- 注意書き -->
+  <div class="warning">
+    <p>⚠️ 本アプリは盗撮目的での使用を固く禁じます。<br>法律および他者のプライバシーを尊重してご利用ください。</p>
   </div>
+
+  <!-- スクリーンショット -->
+  <section class="gallery">
+    <h2 class="section-title">スクリーンショット</h2>
+    <div class="gallery-scroll">
+      <div class="gallery-item">
+        <img src="assets_ja/NO1.jpg" alt="NinjaCamAI 無音撮影画面" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets_ja/NO2.jpg" alt="NinjaCamAI ステルス撮影モード" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets_ja/NO3.jpg" alt="NinjaCamAI タイマー設定画面" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets_ja/NO4.jpg" alt="NinjaCamAI 設定画面" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="assets_ja/NO5.jpg" alt="NinjaCamAI AI顔認識画面" loading="lazy">
+      </div>
     </div>
+  </section>
 
-
+  <!-- ハイライト画像 -->
+  <div style="text-align:center; padding:60px 20px;">
+    <img src="assets_ja/Future.jpg" alt="NinjaCamAI 闘に紛れてすべてを残す" style="max-width:900px; width:100%; border-radius:20px; box-shadow:0 0 30px rgba(0,255,198,0.3);" loading="lazy">
   </div>
 
-<footer style="text-align:center; padding:40px 0; color:#666; font-size:0.9rem; letter-spacing:1px; border-top:1px solid #222; margin-top:40px;">
-  <span style="color:#00ffc6; font-weight:bold;">NinjaCamAI</span> © 2025 — Designed & Developed by <strong>Meitel</strong><br>
-  <a href="mailto:galaxyexpress111@outlook.jp" style="color:#00ffc6; text-decoration:none;">galaxyexpress111@outlook.jp</a>
-</footer>
+  <!-- 比較表 -->
+  <section class="comparison">
+    <h2 class="section-title">無料版 vs Pro版</h2>
+    
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>機能</th>
+          <th>NinjaCamAI<br><small>無料版</small></th>
+          <th>NinjaCamAI Pro<br><small>有料版</small></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>無音撮影（シャッター音ゼロ）</td>
+          <td><span class="check">✓</span></td>
+          <td><span class="check">✓</span></td>
+        </tr>
+        <tr>
+          <td>AI顔認識・笑顔検出</td>
+          <td><span class="check">✓</span></td>
+          <td><span class="check">✓</span></td>
+        </tr>
+        <tr>
+          <td>年齢・性別・感情推定</td>
+          <td><span class="check">✓</span></td>
+          <td><span class="check">✓</span></td>
+        </tr>
+        <tr>
+          <td>タイマー撮影・自動撮影</td>
+          <td><span class="check">✓</span></td>
+          <td><span class="check">✓</span></td>
+        </tr>
+        <tr>
+          <td>振動検知シャッター</td>
+          <td><span class="check">✓</span></td>
+          <td><span class="check">✓</span></td>
+        </tr>
+        <tr>
+          <td>ギャラリー機能</td>
+          <td><span class="check">✓</span></td>
+          <td><span class="check">✓</span></td>
+        </tr>
+        <tr>
+          <td>画面オフ撮影</td>
+          <td><span class="cross">✗</span></td>
+          <td><span class="check">✓</span></td>
+        </tr>
+        <tr>
+          <td>バックグラウンド撮影</td>
+          <td><span class="cross">✗</span></td>
+          <td><span class="check">✓</span></td>
+        </tr>
+        <tr>
+          <td>広告表示</td>
+          <td>あり</td>
+          <td><span class="check">なし</span></td>
+        </tr>
+        <tr>
+          <td>価格</td>
+          <td><strong style="color:var(--ninja-green)">無料</strong></td>
+          <td><strong style="color:var(--ninja-gold)">有料</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-</body>
-</html>
+  <!-- ダウンロード -->
+  <section class="download" id="download">
+    <h2 class="section-title">今すぐダウンロード</h2>
+    
+    <div class="download-cards">
+      <!-- 無料版 -->
+      <div class="download-card free">
+        <h3>NinjaCamAI</h3>
+        <p style="color:var(--text-sub);">無料版</p>
+        <p class="price">$0</p>
+        <ul>
+          <li>完全無音撮影</li>
+          <li>AI顔認識・感情推定</li>
+          <li>タイマー・自動撮影</li>
+          <li>振動検知シャッター</li>
+          <li>完全オフライン動作</li>
+        </ul>
+        <a href="https://play.google.com/store/apps/details?id=com.galaxyexpress.ninja_camera" class="download-btn" target="_blank" rel="noopener">Google Playでダウンロード</a>
+      </div>
 
+      <!-- Pro版 -->
+      <div class="download-card pro">
+        <h3>NinjaCamAI Pro</h3>
+        <p style="color:var(--text-sub);">有料版</p>
+        <p class="price">$7</p>
+        <ul>
+          <li>無料版のすべての機能</li>
+          <li>画面オフ撮影</li>
+          <li>バックグラウンド撮影</li>
+          <li>広告なし</li>
+          <li>優先サポート</li>
+        </ul>
+        <a href="https://meitel.gumroad.com/l/ninjacamai-pro" class="download-btn" target="_blank" rel="noopener">Gumroadで購入</a>
+      </div>
+    </div>
 
+    <!-- 試用版 -->
+    <div class="trial-link">
+      💡 購入前にPro版を試したい方へ：<br>
+      <a href="https://meitel.gumroad.com/l/ninjacamai-pro-trial" target="_blank" rel="noopener">NinjaCamAI Pro 体験版（無料）をダウンロード →</a>
+    </div>
+  </section>
+
+  <!-- 動画 -->
+  <section class="videos">
+    <h2 class="section-title">紹介動画</h2>
+    <p style="color:var(--text-sub);margin-bottom:20px;">📹 字幕ON推奨</p>
+    
+    <div class="video-grid">
+      <div class="video-card">
+        <a href="https://youtube.com/shorts/LHtdWf3iZi8" target="_blank" rel="noopener">
+          <span style="font-size:2rem;">▶</span>
+          <span>紹介動画①を見る</span>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://youtube.com/shorts/JKdhha0Bdic" target="_blank" rel="noopener">
+          <span style="font-size:2rem;">▶</span>
+          <span>紹介動画②を見る</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2 class="section-title">よくある質問</h2>
+    
+    <div class="faq-item">
+      <div class="faq-question">NinjaCamAIは本当に無音で撮影できますか？</div>
+      <div class="faq-answer">
+        <p>はい、NinjaCamAIは完全無音で撮影できます。シャッター音が一切鳴らないため、静かな場所や会議中でも周囲に気づかれることなく撮影が可能です。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">NinjaCamAIは無料で使えますか？</div>
+      <div class="faq-answer">
+        <p>はい、NinjaCamAIの基本機能はすべて無料でご利用いただけます。AI顔認識、無音撮影、タイマー撮影などの主要機能が無料版に含まれています。より高度な機能（画面オフ撮影、バックグラウンド撮影、広告なし）をご希望の場合はPro版をご検討ください。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">画面をオフにしたまま撮影できますか？</div>
+      <div class="faq-answer">
+        <p>Pro版では画面をオフにした状態でも撮影が可能です。電源ボタンを押して画面を消した状態でも、バックグラウンドで撮影を継続できます。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">撮影データは外部に送信されますか？</div>
+      <div class="faq-answer">
+        <p>いいえ、NinjaCamAIは完全オフラインで動作します。すべてのAI処理は端末内で完結し、撮影データが外部サーバーに送信されることは一切ありません。プライバシーを完全に保護します。</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">iPhoneでも使えますか？</div>
+      <div class="faq-answer">
+        <p>現在、NinjaCamAIはAndroid専用アプリです。iOS版は現在開発予定はありませんが、多くのご要望をいただければ検討いたします。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <p class="footer-logo">NinjaCamAI</p>
+    <p class="footer-copy">© 2025 GalaxyExpress — Designed & Developed by Meitel</p>
+    <p class="footer-email">
+      <a href="/cdn-cgi/l/email-protection#5037313c31282935282022352323616161103f25243c3f3f3b7e3a20"><span class="__cf_email__" data-cfemail="3e595f525f46475b464e4c5b4d4d0f0f0f7e514b4a5251515510544e">[email&#160;protected]</span></a>
+    </p>
+  </footer>
+
+  <!-- FAQアコーディオン用JS -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
